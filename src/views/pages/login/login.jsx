@@ -63,7 +63,7 @@ export default function Login() {
                   console.log("succes!");
                   setAuthStatus('success');
 
-                  window.location.href="/"
+                  window.location.href="./"
                 }
                 else
                 {
