@@ -78,8 +78,8 @@ const Tables = () => {
                       <CTableHeaderCell className='text-primary' style={{"textDecoration": "underline", "cursor": "pointer"}} scope="row">{x_name}</CTableHeaderCell>
                       <CTableDataCell>{x_studio_cliente[1]}</CTableDataCell>
                       <CTableDataCell>{x_studio_tipo[1]}</CTableDataCell>
-                      <CTableDataCell>{x_studio_fecha_inicio}</CTableDataCell>
-                      <CTableDataCell style={{color: "red"}}>{x_studio_fecha_expiro}</CTableDataCell>
+                      <CTableDataCell>{x_studio_fecha_inicio ? x_studio_fecha_inicio.split('-').reverse().join('/') : ''}</CTableDataCell>
+                      <CTableDataCell style={{color: "red"}}>{x_studio_fecha_expiro ? x_studio_fecha_expiro.split('-').reverse().join('/') : ''}</CTableDataCell>
                     </CTableRow>
                   );
 

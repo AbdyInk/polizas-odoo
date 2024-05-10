@@ -100,8 +100,8 @@ import {
                     <CCardBody>
                       <CCardTitle>Fechas</CCardTitle>
                       <CCardText>
-                      <b>Fecha Inicio:</b> {polizas.x_studio_fecha_inicio} <br/>
-                      <b>Fecha de Expiración:</b> {polizas.x_studio_fecha_expiro}
+                      <b>Fecha Inicio:</b> {polizas.x_studio_fecha_inicio ? polizas.x_studio_fecha_inicio.split('-').reverse().join('/') : ''} <br/>
+                      <b>Fecha de Expiración:</b> {polizas.x_studio_fecha_expiro ? polizas.x_studio_fecha_expiro.split('-').reverse().join('/') : ''}
                       </CCardText>
                       
                     </CCardBody>

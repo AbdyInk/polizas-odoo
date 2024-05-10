@@ -123,17 +123,19 @@ import { color } from 'framer-motion';
                       <CTableHeaderCell scope="col">Reporte</CTableHeaderCell>
                       <CTableHeaderCell scope="col">Encargado</CTableHeaderCell>
                       <CTableHeaderCell scope="col">Tecnico Asignado</CTableHeaderCell>
+                      <CTableHeaderCell scope="col">Fecha de mantenimiento</CTableHeaderCell>
                       <CTableHeaderCell scope="col">Estado</CTableHeaderCell>
                     </CTableRow>
                   </CTableHead>
                   <CTableBody>
                   {!idenfP ? null : Array.isArray(reportes) ? reportes.sort((a, b) => b.id - a.id).slice((activePage-1)*limit,limit*activePage).map(
-                  ({ x_name, x_studio_encargado, x_studio_tecnico, x_estado }, key) => {
+                  ({ x_name, x_studio_encargado, x_studio_tecnico, x_studio_fecha_mantenimiento, x_estado }, key) => {
                     return(
                       <CTableRow onClick={() => rediTo('/polizas/poliza/equipo/reporte?n='+numeroP+'&idenf='+idenfP+'&rid='+x_name)} key={key}>
                         <CTableHeaderCell className='text-primary' style={{"textDecoration": "underline", "cursor": "pointer"}} scope="row">{x_name}</CTableHeaderCell>
                         <CTableDataCell>{x_studio_encargado}</CTableDataCell>
                         <CTableDataCell>{x_studio_tecnico}</CTableDataCell>
+                        <CTableDataCell>{x_studio_fecha_mantenimiento ? x_studio_fecha_mantenimiento.split('-').reverse().join('/') : ''}</CTableDataCell>
                         <CTableDataCell><CBadge color={x_estado==='Pendiente' ? 'warning' : x_estado==='Inconcluso' ? 'danger' : x_estado==='Finalizado' ? 'success' : 'info'}>{x_estado}</CBadge></CTableDataCell>
                       </CTableRow>
                     );
