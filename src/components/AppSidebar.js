@@ -39,7 +39,7 @@ const AppSidebar = () => {
       >
       <CSidebarHeader className="border-bottom">
         <CSidebarBrand to="/">
-          <Image src="../src/assets/logoVito.png"/>
+          <Image src="/polizas-odoo/src/assets/logoVito.png"/>
         
         </CSidebarBrand>
         <CCloseButton
