@@ -35,7 +35,7 @@ export default function Login() {
       .then(response => {
         
         if(response.data !== "Nope"){
-          window.location.href="/"
+          window.location.href="./"
         }
 
       },[])
