@@ -2,19 +2,10 @@
   "name": "odoo-polizas",
   "version": "5.0.0",
   "description": "Odoo polizas",
-  "homepage": "https://gitname.github.io/react-gh-pages",
-  "bugs": {
-    "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
-  },
-  "license": "MIT",
-  "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
+
+  "license": "MIT",  
+  "homepage": "https://vitotechnologies.com/dashboard",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint \"src/**/*.js\"",
     "serve": "vite preview",

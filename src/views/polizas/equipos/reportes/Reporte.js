@@ -19,8 +19,6 @@ import {
     CButton,
     
   } from '@coreui/react'
-
-  import { DocsExample } from 'src/components'
   
   import React, { useState, useEffect } from 'react';
   import axios from 'axios';

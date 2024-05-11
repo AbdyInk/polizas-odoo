@@ -20,8 +20,6 @@ import {
     CBadge,
   } from '@coreui/react'
 
-  import { DocsExample } from 'src/components'
-
   import { Pagination, SelectPicker } from 'rsuite';
   
   import React, { useState, useEffect } from 'react';

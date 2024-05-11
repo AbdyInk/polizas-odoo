@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   process.env = { ...process.env, ...env }
 
   return {
-    base: './',
+    base: 'https://vitotechnologies.com/dashboard/',
     build: {
       outDir: 'build',
     },

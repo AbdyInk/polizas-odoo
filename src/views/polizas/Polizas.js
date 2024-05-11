@@ -15,7 +15,6 @@ import {
   CCardTitle,
   CCardText,
 } from '@coreui/react'
-import { DocsExample } from 'src/components'
 
 import { Pagination, SelectPicker } from 'rsuite';
 
