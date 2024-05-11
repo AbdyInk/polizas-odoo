@@ -66,11 +66,11 @@ const AppBreadcrumb = () => {
 
   return (
     <CBreadcrumb className="my-0">
-      <CBreadcrumbItem href="./#/">Home</CBreadcrumbItem>
+      <CBreadcrumbItem className='text-primary' style={{"textDecoration": "underline", "cursor": "pointer"}} href="./#/">Home</CBreadcrumbItem>
       {breadcrumbs.map((breadcrumb, index) => {
         return (
           <CBreadcrumbItem
-            {...(breadcrumb.active ? { active: true } : { href: numeroP ? idenfP ? "./#"+breadcrumb.pathname+"?n="+numeroP+"&idenf="+idenfP  : "./#"+breadcrumb.pathname+"?n="+numeroP : "/#"+breadcrumb.pathname })}
+            {...(breadcrumb.active ? { active: true } : { className: 'text-primary', style: {"textDecoration": "underline", "cursor": "pointer"}, href: numeroP ? idenfP ? "./#"+breadcrumb.pathname+"?n="+numeroP+"&idenf="+idenfP  : "./#"+breadcrumb.pathname+"?n="+numeroP : "./#"+breadcrumb.pathname })}
             key={index}
           >
             {breadcrumb.name}
